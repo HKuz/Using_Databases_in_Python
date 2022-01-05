@@ -8,16 +8,14 @@ In order for the code in the Jupyter notebook to run properly, it requires sever
 ```shell
 conda create --name sql python
 conda activate sql
-conda install ipython-sql sqlalchemy psycopg2 notebook pandas -c conda-forge
+conda install ipython-sql sqlalchemy psycopg2 notebook ipywidgets pandas matplotlib seaborn -c conda-forge
 ```
 
 The code utilizes a local PostgreSQL database populated with the Pagila example data (which is based on the MySQL Sakila example database). The `sql` files that create the schema and insert data can be found in the [Pagila GitHub repository](https://github.com/devrimgunduz/pagila). After cloning the repository, run the relevant file via `psql` or load the file directly into PGAdmin to recreate the database locally.
 
 <!--
 TODO:
-- Jupyter notebook
-- Connect to DB in various ways
-- Example SQL queries
-- Save query into pandas DB and create visualizations
+- Connect to DB in various ways (%sql, sqlalchemy)
+- Create visualizations
 
 -->
